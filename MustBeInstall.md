@@ -30,6 +30,7 @@ $ lodash core -o ./dist/lodash.core.js       https://github.com/lodash/lodash   
 <!--АРІ картинок                        https://pixabay.com/api/docs/ -->
 <!-- АРІ прототипів                     https://jsonplaceholder.typicode.com/          API для тестування та створення прототипів -->
 <!-- АРІ країн                          https://restcountries.com/                     інформацію про країни -->
+<!-- API contact                        https://connections-api.herokuapp.com/docs/    API підключень-->
 
 <!-- npm i react-select                 https://www.npmjs.com/package/react-select                Елементb керування Select, створений за допомогою та для ReactJS.-->
 
@@ -63,3 +64,9 @@ https://redux-toolkit.js.org/introduction/getting-started
 <!-- npm install @mui/material @emotion/react @emotion/styled
  https://mui.com/
  MUI пропонує повний набір інструментів інтерфейсу користувача, які допоможуть вам швидше запроваджувати нові функції. Почніть із Material UI, нашої повністю завантаженої бібліотеки компонентів, або додайте свою власну систему дизайну до наших готових до виробництва компонентів.-->
+
+<!-- npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
+https://github.com/chakra-ui/chakra-ui/
+Chakra UI — це всеосяжна бібліотека доступних компонентів React, які можна багаторазово використовувати та компонувати, що спрощує розробку сучасних веб-додатків і веб-сайтів. Бібліотека пропонує широкий спектр компонентів, які можна легко комбінувати для створення складних інтерфейсів користувача, дотримуючись найкращих практик доступності.
+
+ -->
