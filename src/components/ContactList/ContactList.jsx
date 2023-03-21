@@ -1,14 +1,14 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectVisibleList } from '../../redux/selectors';
-import { deleteContact } from '../../redux/operations';
+import { selectVisibleList } from '../../redux/contact/selectors';
+import { deleteContact } from '../../redux/contact/operations';
 import {
   ContactItemStyled,
   ButtonItemStyled,
   ContactNameItemStyled,
 } from '../ContactList/ContactItem/ContactItemStyled';
 
-const ContactList = () => {
+export const ContactList = () => {
   const dispatch = useDispatch();
   const visibleList = useSelector(selectVisibleList);
 
@@ -34,4 +34,4 @@ const ContactList = () => {
   );
 };
 
-export default ContactList;
+// export default ContactList;

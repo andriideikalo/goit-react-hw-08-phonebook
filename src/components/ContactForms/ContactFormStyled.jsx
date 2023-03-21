@@ -8,11 +8,12 @@ export const FormStyled = styled.form`
 export const LabelStyled = styled.label`
   display: block;
   margin-left: 8px;
+  color: black;
 `;
 
 export const BottonStyled = styled.button`
   cursor: pointer;
-  background-color: lightgray;
+  background-color: silver;
   border-radius: 5px;
   border: none;
   margin: 10px;

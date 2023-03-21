@@ -1,8 +1,8 @@
 import { LabelStyled } from './ContactFormStyled';
 import { BottonStyled } from './ContactFormStyled';
-import { addContact } from '../../redux/operations';
+import { addContact } from '../../redux/contact/operations';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from '../../redux/selectors';
+import { selectContacts } from '../../redux/contact/selectors';
 import { Formik, Form, Field } from 'formik';
 
 const initialValues = {
@@ -10,7 +10,7 @@ const initialValues = {
   phone: '',
 };
 // console.log(initialValues);
-const ContactForm = () => {
+export const ContactForm = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
 

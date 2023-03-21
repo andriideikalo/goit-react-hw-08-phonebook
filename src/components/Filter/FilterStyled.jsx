@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const InputFilterStyled = styled.input`
   display: block;
   margin-bottom: 20px;
+
   &:hover,
   &:focus,
   &:active,
@@ -15,6 +16,7 @@ export const InputFilterStyled = styled.input`
 export const FilterLabelStyled = styled.label`
   display: block;
   margin: 0 0 10px 8px;
+  color: black;
 `;
 
 export default InputFilterStyled;

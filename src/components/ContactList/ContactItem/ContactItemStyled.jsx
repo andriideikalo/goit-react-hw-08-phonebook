@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ContactItemStyled = styled.li`
+  color: black;
   margin-bottom: 10px;
 `;
 

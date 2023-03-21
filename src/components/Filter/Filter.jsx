@@ -2,11 +2,11 @@ import React from 'react';
 
 import { InputFilterStyled } from './FilterStyled';
 import { FilterLabelStyled } from './FilterStyled';
-import { setFilter } from '../../redux/filterSplice';
-import { selectFilter } from '../../redux/selectors';
+import { setFilter } from '../../redux/contact/filterSplice';
+import { selectFilter } from '../../redux/contact/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 
-const Filter = () => {
+export const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectFilter);
   const inputHandleChange = evt => {
