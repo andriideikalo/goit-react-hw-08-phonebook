@@ -7,5 +7,6 @@ export const selectVisibleList = createSelector(
   (contactsList, filter) =>
     contactsList.filter(item => item.name.toLowerCase().includes(filter))
 );
+
 export const selectLoadingState = state => state.contacts.contacts.isLoading;
 export const selectError = state => state.contacts.contacts.error;

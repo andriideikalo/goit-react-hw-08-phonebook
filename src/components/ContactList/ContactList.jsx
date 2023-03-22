@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectVisibleList } from '../../redux/contact/selectors';
+import { selectContacts, selectFilter } from '../../redux/contact/selectors';
+
 import { deleteContact } from '../../redux/contact/operations';
 import {
   ContactItemStyled,
@@ -10,7 +11,13 @@ import {
 
 export const ContactList = () => {
   const dispatch = useDispatch();
-  const visibleList = useSelector(selectVisibleList);
+  const contacts = useSelector(selectContacts);
+  const filter = useSelector(selectFilter);
+
+  const normalizeFilter = filter.toLowerCase();
+  const visibleList = contacts.filter(contact =>
+    contact.name.toLowerCase().includes(normalizeFilter)
+  );
 
   return (
     <ol>
