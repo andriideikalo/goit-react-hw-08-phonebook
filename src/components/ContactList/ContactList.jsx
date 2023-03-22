@@ -15,10 +15,10 @@ export const ContactList = () => {
   return (
     <ol>
       {visibleList.length !== 0 ? (
-        visibleList.map(({ id, name, phone }) => (
+        visibleList.map(({ id, name, number }) => (
           <ContactItemStyled key={id}>
             <ContactNameItemStyled>{name} </ContactNameItemStyled>
-            <ContactNameItemStyled> {phone}</ContactNameItemStyled>
+            <ContactNameItemStyled> {number}</ContactNameItemStyled>
             <ButtonItemStyled
               type="button"
               onClick={() => dispatch(deleteContact(id))}
