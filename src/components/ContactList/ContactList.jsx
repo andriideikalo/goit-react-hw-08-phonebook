@@ -15,13 +15,13 @@ export const ContactList = () => {
   return (
     <ol>
       {visibleList.length !== 0 ? (
-        visibleList.map(({ id, name, number }) => (
-          <ContactItemStyled key={id}>
-            <ContactNameItemStyled>{name} </ContactNameItemStyled>
-            <ContactNameItemStyled> {number}</ContactNameItemStyled>
+        visibleList.map(contact => (
+          <ContactItemStyled key={contact.id}>
+            <ContactNameItemStyled>{contact.name} </ContactNameItemStyled>
+            <ContactNameItemStyled> {contact.number}</ContactNameItemStyled>
             <ButtonItemStyled
               type="button"
-              onClick={() => dispatch(deleteContact(id))}
+              onClick={() => dispatch(deleteContact(contact.id))}
             >
               Delete
             </ButtonItemStyled>
